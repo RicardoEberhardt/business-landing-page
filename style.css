@@ -620,13 +620,81 @@ header section p {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1300px) {
+    .pricing .cards {
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .pricing .cards .first-card {
+        margin-right: 0;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .pricing .cards .second-card {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
 
+@media screen and (min-width: 600px) {
+    .pricing .cards .card .button-hidden-mobile {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .pricing .cards {
+        width: 340px;
+    }
+    .pricing .cards .card .button-hidden {
+        display: none;
+    }
+    .pricing .cards .card h5 {
+        margin-bottom: 20px;
+    }
+    .pricing .cards .card a {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
 
+.contact {
+    margin-top: 358px;
+}
 
+.contact h2 {
+    text-align: center;
+    font-size: max(42px, 2.8vw);
+    margin-bottom: 10px;
+}
 
+.contact p {
+    text-align: center;
+    font-size: max(16px, 1vw);
+    font-weight: 500;
+    margin-bottom: 80px;
+}
 
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-cards .first-contact,
+.contact-cards .third-contact {
+    width: 328px;
+    height: 343px;
+    background-color: white;
+    color: #252B42;
+}
+
+.contact-cards .second-contact {
+    width: 328px;
+    height: 403px;
+    background-color: #23A6F0;
+}
 
 .test {
     margin-top: 500px;
