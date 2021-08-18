@@ -682,6 +682,15 @@ header section p {
     align-items: center;
 }
 
+.contact-cards h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-cards h5 {
+    font-size: 16px;
+}
+
 .contact-cards .first-contact,
 .contact-cards .third-contact {
     width: 328px;
@@ -696,6 +705,164 @@ header section p {
     background-color: #23A6F0;
 }
 
-.test {
-    margin-top: 500px;
+.contact-card {
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-card a {
+    text-decoration: none;
+}
+
+.contact-card a button {
+    margin: auto;
+    border: none;
+    font-size: 14px;
+}
+
+.contact-cards .first-contact a button,
+.contact-cards .third-contact a button {
+    color: #23A6F0;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid #23A6F0;
+    padding: 15px 36px;
+    border-radius: 37px;
+    letter-spacing: 0.4px;
+}
+
+.contact-cards .second-contact a button {
+    color: white;
+    font-weight: 600;
+    background-color: #23A6F0;
+    border: 1px solid #FFFFFF;
+    padding: 15px 36px;
+    border-radius: 37px;
+    letter-spacing: 0.4px;
+}
+
+.contact-card img {
+    margin-top: 83px;
+    margin-bottom: 15px;
+}
+
+.contact-cards .first-contact img,
+.contact-cards .third-contact img {
+    margin-top: 50px;
+}
+
+.contact-card :nth-child(3) {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-card h5 {
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-cards .second-contact {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contact {
+        margin-top: 250px;
+    }
+}
+
+footer {
+    margin-top: 165px;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-footer h3 {
+    font-size: 24px;
+}
+
+.top-footer div :nth-child(3) {
+    margin-right: 62.5px;
+    margin-left: 21.5px;
+}
+
+.top-footer div :nth-child(2) {
+    margin-left: 21.5px;
+}
+
+.footer-line {
+    border: 1px solid #E6E6E6;
+    margin-top: 53px;
+    margin-bottom: 54px;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul :first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    font-weight: 500;
+}
+
+footer ul :nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer ul :nth-child(5) {
+    margin-top: 10px;
+}
+
+.footer-mail {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .footer-mail input {
+    padding: 20px 80px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #E6E6E6;
+}
+
+footer .footer-mail button {
+    border-radius: 0px 5px 5px 0px;
+    padding: 15px 22.5px 15px 22.5px;
+    background-color: #23A6F0;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    border: 1px solid #E6E6E6;
+}
+
+footer > p {
+    margin-top: 150px;
+    text-align: center;
 }
