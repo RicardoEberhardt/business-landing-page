@@ -146,6 +146,35 @@ header section p {
     margin-bottom: 203px;
 }
 
+.mobile-menu a:hover {
+    filter: brightness(0.9);
+}
+
+.header-buttons button {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 37px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    filter: brightness(1.1);
+}
+
+.header-buttons button:first-child {
+    background-color: #23A6F0;
+    margin-right: 10px;
+}
+
+.header-buttons button:nth-child(2) {
+    background-color: #252B42;
+    border: 1px solid white;
+}
+
 @media screen and (max-width: 1000px) {
     header section p {
         line-height: 30px;
@@ -179,33 +208,21 @@ header section p {
     }
 }
 
-.mobile-menu a:hover {
-    filter: brightness(0.9);
+@media screen and (max-width: 560px) {
+    .header-buttons button:first-child,
+    .header-buttons button:nth-child(2) {
+        padding: 20px 36px;
+        font-size: 16px;
+        width: 190px;
+        display: inline-block;
+        text-align: center;
+    }
 }
 
-.header-buttons button {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    padding: 15px 36px;
-    border: none;
-    border-radius: 37px;
-    cursor: pointer;
-}
-
-.header-buttons button:hover {
-    filter: brightness(1.1);
-}
-
-.header-buttons button:first-child {
-    background-color: #23A6F0;
-    margin-right: 10px;
-}
-
-.header-buttons button:nth-child(2) {
-    background-color: #252B42;
-    border: 1px solid white;
+@media screen and (max-width: 405px) {
+    header nav .mobile-menu {
+        margin-left: -15px;
+    }
 }
 
 .container h2 {
@@ -306,7 +323,7 @@ header section p {
 
 @media screen and (max-width: 500px) {
     .sub-features {
-        padding: 0.1rem 2rem;
+        padding: 0.1rem 0.4rem;
     }
 }
 
@@ -568,7 +585,7 @@ header section p {
 .pricing .cards .card {
     background-color: white;
     margin-right: 30px;
-    padding: 50px 40px;
+    padding: 50px 30px;
     border: 1px solid #DEDEDE;
     border-radius: 10px;
     text-align: center;
@@ -675,7 +692,7 @@ header section p {
 
 @media screen and (max-width: 600px) {
     .pricing .cards {
-        width: 340px;
+        width: 320px;
     }
     .pricing .cards .card .button-hidden {
         display: none;
@@ -970,6 +987,9 @@ footer span a {
         align-items: center;
         margin-top: 100px;
         margin-top: 80px;
+    }
+    .mail-mobile .footer-mail input {
+        padding-right: 10px;
     }
 }
 
