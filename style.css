@@ -58,6 +58,10 @@ header nav ul li a {
     font-weight: 600;
 }
 
+header nav ul li a:hover {
+    filter: brightness(1.1);
+}
+
 header nav ul li:last-child {
     margin-right: 0;
 }
@@ -66,7 +70,6 @@ header nav .nav-auth, button {
     font-size: 14px;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 header nav .nav-auth button {
@@ -76,6 +79,15 @@ header nav .nav-auth button {
     border: none;
     padding: 15px 25px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav .nav-auth button:hover {
+    filter: brightness(1.1);
+}
+
+.nav-auth a:hover {
+    filter: brightness(1.2);
 }
 
 header nav .nav-auth button img {
@@ -86,6 +98,11 @@ header nav h3 {
     font-size: max(22px, 1.7vw);
     margin-right: 83px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+header nav h3:hover {
+    filter: brightness(1.1);
 }
 
 header nav .nav-auth a{
@@ -162,6 +179,10 @@ header section p {
     }
 }
 
+.mobile-menu a:hover {
+    filter: brightness(0.9);
+}
+
 .header-buttons button {
     color: white;
     font-size: 14px;
@@ -170,6 +191,11 @@ header section p {
     padding: 15px 36px;
     border: none;
     border-radius: 37px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    filter: brightness(1.1);
 }
 
 .header-buttons button:first-child {
@@ -210,7 +236,7 @@ header section p {
     text-align: center;
     max-width: 40%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 69px;
 }
 
@@ -267,7 +293,6 @@ header section p {
     }
     .features {
         display: flex;
-        flex-direction: row;
     }
 }
 
@@ -592,6 +617,11 @@ header section p {
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.pricing .cards .card a button:hover {
+    filter: brightness(1.1);
 }
 
 .pricing .cards .card ul {
@@ -656,6 +686,9 @@ header section p {
     .pricing .cards .card a {
         margin-top: 40px;
         margin-bottom: 0;
+    }
+    .pricing .title {
+        margin-top: 180px;
     }
 }
 
@@ -729,6 +762,12 @@ header section p {
     padding: 15px 36px;
     border-radius: 37px;
     letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.contact-cards .first-contact a button:hover,
+.contact-cards .third-contact a button:hover {
+    filter: brightness(1.1);
 }
 
 .contact-cards .second-contact a button {
@@ -739,6 +778,11 @@ header section p {
     padding: 15px 36px;
     border-radius: 37px;
     letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.contact-cards .second-contact a button:hover {
+    filter: brightness(1.1);
 }
 
 .contact-card img {
@@ -797,6 +841,11 @@ footer {
     margin-left: 21.5px;
 }
 
+.top-footer img:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
 .footer-line {
     border: 1px solid #E6E6E6;
     margin-top: 53px;
@@ -820,6 +869,11 @@ footer ul :first-child {
 
 footer ul li {
     font-weight: 500;
+    cursor: pointer;
+}
+
+footer ul li:first-child {
+    cursor: auto;
 }
 
 footer ul :nth-child(3) {
@@ -829,6 +883,11 @@ footer ul :nth-child(3) {
 
 footer ul :nth-child(5) {
     margin-top: 10px;
+}
+
+.footer-features {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-mail {
@@ -860,9 +919,79 @@ footer .footer-mail button {
     font-weight: 200;
     letter-spacing: 0.5px;
     border: 1px solid #E6E6E6;
+    cursor: pointer;
+}
+
+footer .footer-mail button:hover {
+    background-color: #23A6F0;
+    filter: brightness(1.1);
 }
 
 footer > p {
     margin-top: 150px;
     text-align: center;
+    padding-bottom: 15px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer-lists div:last-child > p {
+    font-weight: 500;
+}
+
+footer span {
+    font-weight: bold;
+    margin-left: 20px;
+    color: slateblue;
+}
+
+footer span a {
+    color: slateblue;
+}
+
+.mail-mobile {
+    display: none;
+}
+
+.list-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1460px) {
+    .mail-desktop {
+        display: none;
+    }
+    .footer-lists {
+        justify-content: space-between;
+    }
+    .mail-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-features, .resources {
+        display: none;
+    }
+    .footer-lists {
+        justify-content: space-around;
+    }
+    .list-mobile {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .top-footer div :nth-child(3) {
+        margin-right: 0;
+    }
+    .footer-line {
+        margin-top: 23px;
+    }
+    footer > p {
+        margin-top: 100px;
+    }
 }
