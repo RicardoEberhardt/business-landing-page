@@ -1,4 +1,4 @@
-https://img.shields.io/badge/license-MIT-blue
+
 
 # Business Landing Page
 
