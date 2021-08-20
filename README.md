@@ -1,4 +1,4 @@
-![Legenda](https://img.shields.io/badge/license-MIT-blue)
+![Legenda](https://img.shields.io/badge/license-MIT-blue) ![Legenda](https://img.shields.io/badge/Ricardo%20Eberhardt-Business%20Landing%20Page-orange)
 
 # Business Landing Page
 
